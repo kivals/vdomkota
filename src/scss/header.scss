@@ -1,0 +1,32 @@
+.header {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		img {
+			width: 200px;
+		}
+	}
+
+	&__menu {
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 15px;
+		transition: .5s;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
