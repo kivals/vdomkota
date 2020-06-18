@@ -21,7 +21,9 @@ function script() {
         extname: '.min.js',
       })
     )
-    .pipe(gulp.dest('build/js/'));
+    .pipe(gulp.dest('build/js/'))
+    .pipe(gulp.src('src/js/jquery/*.js'))
+    .pipe(gulp.dest('build/js/jquery'));
 }
 
 module.exports = script;

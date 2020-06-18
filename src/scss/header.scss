@@ -2,11 +2,12 @@
 	&__body {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__logo {
 		img {
-			width: 200px;
+			width: 150px;
 		}
 	}
 
@@ -18,12 +19,40 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+
+		li {
+			margin: 0px 60px 0px 0px;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&.active {
+				a {
+					color: #000;
+				}
+				
+				a::after {
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: 0px;
+					background: #F95959;
+					width: 25px;
+					height: 2px;
+				}
+			}
+		}
 	}
 
 	&__link {
+		font-weight: 400;
+		position: relative;
+		display: inline-block;
 		color: rgba(0, 0, 0, 0.7);
 		font-size: 15px;
 		transition: .5s;
+		padding-bottom: 8px;;
 
 		&:hover {
 			color: #000;
