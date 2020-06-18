@@ -16,19 +16,25 @@
 	&__info {
 		position: absolute;
 		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 		z-index: 2;
 		color: #fff;
+		background-color: rgba(0, 0, 0, .3);
 	}
 
 	&__btn {
-			background-color: transparent;
-			color: #fff;
-			border: 3px solid #f38bae;
-			border-radius: 20px;
-			padding: 7px 44px;
-			font-size: 20px;
-			transition: all 0.6s ease;
+		text-transform: uppercase;
+		background-color: #f38bae;
+		color: #fff;
+		border: 3px solid #000;
+		border-radius: 20px;
+		padding: 7px 44px;
+		font-size: 20px;
+		transition: all 0.6s ease;
 	}
+	
 	&__btn:hover{
 			text-decoration: none; 
 			background-color: #f38bae;
