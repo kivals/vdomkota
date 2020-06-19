@@ -15,6 +15,10 @@
 
 	&__info {
 		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 		left: 0;
 		right: 0;
 		top: 0;
@@ -24,24 +28,20 @@
 		background-color: rgba(0, 0, 0, .3);
 	}
 
+	&__title {
+		margin-top: 50px;
+		max-width: 700px;
+		font-size: 50px;
+		line-height: 1.3;
+		text-align: center;
+	}
+
 	&__btn {
-		text-transform: uppercase;
-		background-color: #f38bae;
-		color: #fff;
-		border: 3px solid #000;
-		border-radius: 20px;
-		padding: 7px 44px;
-		font-size: 20px;
-		transition: all 0.6s ease;
+		margin-bottom: 50px;
 	}
 	
-	&__btn:hover{
-			text-decoration: none; 
-			background-color: #f38bae;
-			color: #000 ;
-			border-color: #006089;
-	}
 }
+
 .intro-slider {
 	position: relative;
 
@@ -52,6 +52,7 @@
 /* Точки (булиты) */ 
 .intro-slider .slick-dots{
 	position: absolute;
+	z-index: 2;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -78,4 +79,23 @@
 	height: 10px;
 	border-radius: 50%;
 	background-color: #828282;
-} 
+}
+
+.btn {
+		display: block;
+		text-transform: uppercase;
+		background-color: #f38bae;
+		color: #fff;
+		border: 3px solid #000;
+		border-radius: 20px;
+		padding: 7px 44px;
+		font-size: 20px;
+		transition: all 0.6s ease;
+	}
+	
+	.btn:hover{
+			text-decoration: none; 
+			background-color: #f38bae;
+			color: #000 ;
+			border-color: #006089;
+	}

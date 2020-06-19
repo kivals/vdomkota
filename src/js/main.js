@@ -1,12 +1,21 @@
 $(document).ready(function () {
+		ibg();
 	$('.intro-slider').slick({
 		arrows: false,
 		dots: true,
 		speed: 1000,
 		autoplay: true,
-		autoplaySpeed: 5000
+		autoplaySpeed: 8000
 	});
-	ibg();
+
+	$('.slider-cats').slick({
+		dots: false,
+		slidesToShow: 4,
+		slidesToScroll: 4
+	});
+
+
+
 });
 
 function ibg() {
