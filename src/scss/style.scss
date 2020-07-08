@@ -6,12 +6,7 @@ $fontfamily: 'FF_DIN_Round_Pro';
 //</ШРИФТЫ>
 
 //<ПЕРЕМЕННЫЕ>
-$minwidth:320px;
-$mw:1200;
-$md1:$mw+12;
-$md2:990;
-$md3:767.98;
-$md4:479.98;
+@import './common/_variables.scss';
 //</ПЕРЕМЕННЫЕ>
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
