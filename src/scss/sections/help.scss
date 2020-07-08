@@ -11,18 +11,20 @@
 }
 
 .help-item {
-  cursor: pointer;
   &__img {
+    display: block;
+    margin: 0 auto;
     max-width: 150px;
     filter: gray; /* IE6-9 */
     filter: grayscale(100%);
-    transition: filter $transition-time;
+    transition: all $transition-time;
   }
 
   &:hover {
     .help-item__img {
+      transform: scale(1.1);
       filter: none;
-      transition: filter $transition-time;
+      transition: all $transition-time;
     }
     .help-item__text {
       transition: color $transition-time;
