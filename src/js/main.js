@@ -14,8 +14,6 @@ $(document).ready(function () {
 		slidesToScroll: 4
 	});
 
-
-
 });
 
 function ibg() {

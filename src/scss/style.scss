@@ -27,10 +27,10 @@ $fontfamily: 'FF_DIN_Round_Pro';
 //</ОСНОВНАЯ СЕТКА>
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
-@import "header.scss";
-@import "./sections/intro.scss";
-@import "./sections/cats.scss";
-@import "./sections/help.scss";
+@import "sections/header";
+@import "sections/intro.scss";
+@import "sections/about.scss";
+@import "sections/cats.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 .ibg {
