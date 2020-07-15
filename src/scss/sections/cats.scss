@@ -1,7 +1,12 @@
 .cats {
+  background-color: #f6f6f6;
   margin-top: $mt-section;
-  text-align: center;
-
+  padding: 70px 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
     margin-bottom: 66px;
     font-size: 35px;
@@ -9,13 +14,21 @@
     letter-spacing: 0.06em;
     color: #545454;
   }
+  &__slider {
+    width: 100%;
+    margin-bottom: 46px;
+  }
+  &__btn {
+    background-color: $main-color;
+    color: #fff;
+  }
 }
 .slider-cats {
   position: relative;
   padding: 0 30px 0 30px;
   &__item {
-    height: 200px;
-    margin-right: 10px;
+    margin: 0 auto;
+    width: 270px;
   }
   .slick-track {
     display: flex;
@@ -23,26 +36,61 @@
   .slick-list {
     overflow: hidden;
   }
-
   .slick-arrow {
     margin: -30px 0px 0px 0px;
     position: absolute;
     font-size: 0;
     top: 50%;
     z-index: 10;
-    width: 30px;
+    width: 50px;
     height: 50px;
-
+    border: 2px solid $main-color;
+    border-radius: 50%;
 
     &.slick-prev {
       left: 0;
-      background: url('../img/icons/long_left_arrow_11203.svg') 0 0 / 100% no-repeat;
+      background: url('../img/icons/left.png') center no-repeat;
+      &:hover {
+        background-color: $main-color;
+      }
     }
-
     &.slick-next {
       right: 0;
-      background: url('../img/icons/long_left_arrow_11203.svg') 0 0 / 100% no-repeat;
+      background: url('../img/icons/right.png') center no-repeat;
+      &:hover {
+        background-color: $main-color;
+      }
     }
   }
+}
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.75);
+    .cat-card__btn {
+      background-color: $main-color;
+    }
+  }
+  &__photo {
+    height: 270px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__name {
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 24px;
+  }
+  &__btn {
+    margin-bottom: 34px;
+  }
+}
+.slider-wrapper {
+  padding: 20px 0;
 }
 

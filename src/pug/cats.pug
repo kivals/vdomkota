@@ -1,11 +1,29 @@
-section.cats.container
-    .cats__title Our friends who <br/> are looking for a house
-    .cats__slider.slider-cats
-        .slider-cats__item.ibg
-            img(src="/img/cats_slider/1.jpg", alt="", srcset="")
-        .slider-cats__item.ibg
-            img(src="/img/cats_slider/2.jpg", alt="", srcset="")
-        .slider-cats__item.ibg
-            img(src="/img/cats_slider/3.jpg", alt="", srcset="")
-        .slider-cats__item.ibg
-            img(src="/img/cats_slider/4.jpg", alt="", srcset="")
+section.cats
+    .container
+        .cats__wrapper
+            .cats__title Our friends who <br/> are looking for a house
+            .cats__slider.slider-cats
+                .slider-wrapper
+                    .slider-cats__item.cat-card
+                        .cat-card__photo.ibg
+                            img(src="/img/cats_slider/1.jpg", alt="", srcset="")
+                        p.cat-card__name Cat Name
+                        a.cat-card__btn.btn(href="#") Learn More
+                .slider-wrapper
+                    .slider-cats__item.cat-card
+                        .cat-card__photo.ibg
+                            img(src="/img/cats_slider/2.jpg", alt="", srcset="")
+                        p.cat-card__name Cat Name
+                        a.cat-card__btn.btn(href="#") Learn Moreка
+                .slider-wrapper
+                    .slider-cats__item.cat-card
+                        .cat-card__photo.ibg
+                            img(src="/img/cats_slider/3.jpg", alt="", srcset="")
+                        p.cat-card__name Cat Name
+                        a.cat-card__btn.btn(href="#") Learn More
+                .slider-wrapper
+                    .slider-cats__item.cat-card
+                        .cat-card__photo.ibg
+                            img(src="/img/cats_slider/4.jpg", alt="", srcset="")
+                        p.cat-card__name Cat Name
+                        a.cat-card__btn.btn(href="#") Learn More

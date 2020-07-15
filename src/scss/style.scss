@@ -27,17 +27,9 @@ $fontfamily: 'FF_DIN_Round_Pro';
 //</ОСНОВНАЯ СЕТКА>
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
-@import "sections/header";
+@import "common/blocks.scss";
+@import "sections/header.scss";
 @import "sections/intro.scss";
 @import "sections/about.scss";
 @import "sections/cats.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
-
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  img {
-    display: none; 
-  }
-}
