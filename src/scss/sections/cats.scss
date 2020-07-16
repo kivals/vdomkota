@@ -8,6 +8,7 @@
     align-items: center;
   }
   &__title {
+    text-align: center;
     margin-bottom: 66px;
     font-size: 35px;
     line-height: 45px;
@@ -46,7 +47,7 @@
     height: 50px;
     border: 2px solid $main-color;
     border-radius: 50%;
-
+    transition: all 0.6s ease;
     &.slick-prev {
       left: 0;
       background: url('../img/icons/left.png') center no-repeat;

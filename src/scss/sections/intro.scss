@@ -1,13 +1,14 @@
 .intro {
-  display: flex;
-  height: 500px;
+  &__body {
+    display: flex;
+    height: 500px;
+  }
   &__info {
     flex: 1 1 50%;
     margin-right: 120px;
   }
   &__picture {
     flex: 1 0 50%;
-    //height: 500px;
   }
 }
 

@@ -1,0 +1,57 @@
+.donation {
+  background-color: $main-background-color;
+  padding: 75px 0;
+  &__body {
+    display: flex;
+  }
+  &__picture {
+    width: 40%;
+    min-height: 250px;
+    margin-right: 60px;
+  }
+  &__description {
+    flex: 0 1 30%;
+  }
+}
+
+.donation-description {
+  &__title {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 25px;
+  }
+  &__bank {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 13px;
+  }
+  &__card {
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: $main-color;
+    padding: 17px 15px 17px 59px;
+    margin-bottom: 25px;
+    border-radius: 9px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 14px;
+      top:50%;
+      height: 24px;
+      width: 30px;
+      transform: translateY(-50%);
+      background: url("../img/icons/credit_card.png") 0 0 no-repeat;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: #b2b2b2;
+  }
+}
